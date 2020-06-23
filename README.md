@@ -11,14 +11,14 @@ Usage
 ---------
 This extractor runs 4 Selenium driver in background using multiple thread and serve as an server using flask.
 To run the server, simply run the following:
-```$ python server.py```
+	$ python server.py
 or run in the background (bash environment):
-```$ python server.py &>> log.txt &```
+	$ python server.py &>> log.txt &
 To use the extractor, use HTTP requesting tools like `curl` or [Postman](https://www.postman.com/) to send a GET request to the server:
-```GET http://localhost:5001/[encoded URL]```
+	GET http://localhost:5001/[encoded URL]
 the URL appended after slash must be encoded by URL encoding.
 The response is a JSON format. For example, the following request:
-```GET http://3.112.43.166:5001/https%3A%2F%2Fblog.gtwang.org%2Fprogramming%2Fpython-threading-multithreaded-programming-tutorial%2F```
+	GET http://3.112.43.166:5001/https%3A%2F%2Fblog.gtwang.org%2Fprogramming%2Fpython-threading-multithreaded-programming-tutorial%2F
 will response
 ```
 {
